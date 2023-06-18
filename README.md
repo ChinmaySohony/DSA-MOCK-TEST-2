@@ -14,7 +14,19 @@
 
 <br>
 
-### Answer: File name: operator.js
+### Answer:
+
+```
+File name: operator.js
+The code uses a binary search approach to find the square root of the input number x. It starts with a left pointer at 0 and a right pointer initially set to half of x. It calculates the square of the middle value and compares it with x.
+
+If the square is equal to x, it returns the middle value as the square root. If the square is less than x, it updates the left pointer to mid + 1 to search in the upper half. If the square is greater than x, it updates the right pointer to mid to search in the lower half.
+
+The binary search continues until the left pointer crosses the right pointer. At that point, the left pointer - 1 represents the square root rounded down to the nearest integer.
+
+The code has a time complexity of O(log(x)), as it performs a binary search on the range from 0 to x/2.
+
+``` 
 
 <br>
 
@@ -42,4 +54,20 @@
 ### 0 <= Node.val <= 9
 ### It is guaranteed that the list represents a number that does not have leading zeros.
 
+<br>
 
+### Answer:
+
+```
+File name:numbers.js
+In this code
+The code defines a ListNode class to represent each node in the linked list. The addTwoNumbers function takes two linked lists l1 and l2 as input and returns the sum as a new linked list.
+
+The code uses a while loop to iterate through both linked lists, adding the corresponding digits and maintaining a carry value. It calculates the sum of the current digits, updates the carry, and creates a new node with the sum as the value. The current pointer keeps track of the current node in the resulting linked list.
+
+After the loop, the function returns the dummy.next node, which points to the head of the resulting linked list.
+
+In the test case, two input linked lists l1 and l2 are created and passed to the addTwoNumbers function. The resulting linked list is traversed, and each value is concatenated to the output string. Finally, the output string is logged to the console.
+
+The code has a time complexity of O(max(n, m)), where n and m are the lengths of the input linked lists l1 and l2.
+```
