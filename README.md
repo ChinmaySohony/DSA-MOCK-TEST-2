@@ -13,6 +13,7 @@
 ### 0 <= x <= 231 - 1
 
 <br>
+
 ### Answer: File name: operator.js
 
 <br>
